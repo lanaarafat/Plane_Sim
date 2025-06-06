@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Public\\School\\Plane_Sim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|c:\\users\\public\\school\\plane_sim\\assets\\scripts\\throttlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\throttlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\aircraftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aircraftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\mixturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mixturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\masterswitchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\masterswitchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\magnetoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magnetoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\yokecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\yokecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\aileroncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aileroncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\ruddercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ruddercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\landinggearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\landinggearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\trimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\elevatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\elevatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\propellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\propellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\flapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\electricalsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\electricalsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\enginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|C:\\Users\\Public\\School\\Plane_Sim\\assets\\scripts\\fuelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D16720-05B5-0A16-A714-A6F694AB2252}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fuelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LandingGearController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\LandingGearController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LandingGearController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\LandingGearController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LandingGearController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:32:36.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TrimController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\TrimController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TrimController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\TrimController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TrimController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:24:27.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RudderController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\RudderController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RudderController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\RudderController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RudderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:04:17.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AircraftController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\AircraftController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AircraftController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\AircraftController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AircraftController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAD4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:22:35.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThrottleController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ThrottleController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThrottleController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ThrottleController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThrottleController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:27:36.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MasterSwitchController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MasterSwitchController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MasterSwitchController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MasterSwitchController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MasterSwitchController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:07:55.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MagnetosController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MagnetosController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MagnetosController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MagnetosController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MagnetosController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:10:14.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MixtureController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MixtureController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MixtureController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\MixtureController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MixtureController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:14:03.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AileronController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\AileronController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AileronController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\AileronController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AileronController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:32:37.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YokeController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\YokeController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\YokeController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\YokeController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\YokeController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T12:05:08.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ElevatorController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ElevatorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ElevatorController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ElevatorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ElevatorController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:03:08.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PropellerController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\PropellerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PropellerController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\PropellerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PropellerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:25:32.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FlapController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\FlapController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FlapController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\FlapController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FlapController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:08:40.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ElectricalSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ElectricalSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ElectricalSystem.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\ElectricalSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ElectricalSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:30:32.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FuelSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\FuelSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FuelSystem.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\FuelSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FuelSystem.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:29:11.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EngineController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\EngineController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EngineController.cs",
+              "ToolTip": "C:\\Users\\Public\\School\\Plane_Sim\\Assets\\Scripts\\EngineController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EngineController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:24:27.714Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

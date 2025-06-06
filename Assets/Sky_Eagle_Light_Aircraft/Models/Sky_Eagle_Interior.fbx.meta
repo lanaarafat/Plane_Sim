@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: e475ea4f812177a4e9342aee98965e4e
+timeCreated: 1515715547
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Airspeed_Needle
+    100002: Altitude_Large_Needle
+    100004: Altitude_Small_Needle
+    100006: Amps_Guage_Needle
+    100008: Attitude_Indicator
+    100010: CessnaSeats
+    100012: Compass_Needle
+    100014: Inner_Cabin_Walls
+    100016: Instrument_Panel
+    100018: Left_Yoke
+    100020: Right_Yoke
+    100022: RPM_Guage_Needle
+    100024: //RootNode
+    100026: Throttle_Knob
+    100028: Turn_Indicator_Needle
+    100030: Vertical_Speed_Needle
+    100032: Wing_Flap_Knob
+    400000: Airspeed_Needle
+    400002: Altitude_Large_Needle
+    400004: Altitude_Small_Needle
+    400006: Amps_Guage_Needle
+    400008: Attitude_Indicator
+    400010: CessnaSeats
+    400012: Compass_Needle
+    400014: Inner_Cabin_Walls
+    400016: Instrument_Panel
+    400018: Left_Yoke
+    400020: Right_Yoke
+    400022: RPM_Guage_Needle
+    400024: //RootNode
+    400026: Throttle_Knob
+    400028: Turn_Indicator_Needle
+    400030: Vertical_Speed_Needle
+    400032: Wing_Flap_Knob
+    2300000: Airspeed_Needle
+    2300002: Altitude_Large_Needle
+    2300004: Altitude_Small_Needle
+    2300006: Amps_Guage_Needle
+    2300008: Attitude_Indicator
+    2300010: CessnaSeats
+    2300012: Compass_Needle
+    2300014: Inner_Cabin_Walls
+    2300016: Instrument_Panel
+    2300018: Left_Yoke
+    2300020: Right_Yoke
+    2300022: RPM_Guage_Needle
+    2300024: Throttle_Knob
+    2300026: Turn_Indicator_Needle
+    2300028: Vertical_Speed_Needle
+    2300030: Wing_Flap_Knob
+    3300000: Airspeed_Needle
+    3300002: Altitude_Large_Needle
+    3300004: Altitude_Small_Needle
+    3300006: Amps_Guage_Needle
+    3300008: Attitude_Indicator
+    3300010: CessnaSeats
+    3300012: Compass_Needle
+    3300014: Inner_Cabin_Walls
+    3300016: Instrument_Panel
+    3300018: Left_Yoke
+    3300020: Right_Yoke
+    3300022: RPM_Guage_Needle
+    3300024: Throttle_Knob
+    3300026: Turn_Indicator_Needle
+    3300028: Vertical_Speed_Needle
+    3300030: Wing_Flap_Knob
+    4300000: Inner_Cabin_Walls
+    4300002: Airspeed_Needle
+    4300004: Altitude_Large_Needle
+    4300006: Altitude_Small_Needle
+    4300008: Compass_Needle
+    4300010: Vertical_Speed_Needle
+    4300012: Turn_Indicator_Needle
+    4300014: Attitude_Indicator
+    4300016: Amps_Guage_Needle
+    4300018: RPM_Guage_Needle
+    4300020: Left_Yoke
+    4300022: Right_Yoke
+    4300024: Throttle_Knob
+    4300026: Wing_Flap_Knob
+    4300028: CessnaSeats
+    4300030: Instrument_Panel
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
