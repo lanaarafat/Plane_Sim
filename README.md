@@ -41,6 +41,24 @@ PlaneVR is an immersive VR flight simulator developed in Unity for the Oculus Qu
 - Device Testing: Manual testing performed on Oculus Quest 2.
 - User Feedback: Iterative feedback from test users is used to improve UI, interactions, and performance.
 
+# Hardware Integration – User Interaction in VR
+PlaneVR is designed for immersive interaction using the Meta Quest 2 headset and its handheld VR controllers. The user interacts with the aircraft and interface elements directly in 3D space using natural hand motions and controller input, powered by Unity’s XR Interaction Toolkit.
+
+### Headset: Meta Quest 2
+- Provides 6DoF (six degrees of freedom) head tracking.
+- Allows the user to look around the cockpit freely.
+- Enables immersive environment viewing from the pilot’s perspective.
+
+### Hand Controllers
+Each controller is mapped to specific interactions inside the virtual cockpit:
+- Controller Input	In-App Function
+- Trigger (index)	Grab/interact with cockpit levers, switches, yoke
+- Grip (side button)	Hold and manipulate physical instruments
+- Thumbstick: Navigate UI menus or reposition the hand if needed
+- Button A/B or X/Y: Toggle flashcards, menu shortcuts, or pause
+
+The user grabs the yoke, adjusts the throttle, and activates aircraft systems by physically reaching out and interacting with in-cockpit objects. When hovering over a control, contextual tooltips appear, explaining its function. This supports beginner pilots through visual guidance.
+
 
 Developed By
 Mutoni Lana Arafat
