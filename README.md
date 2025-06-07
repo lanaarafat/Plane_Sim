@@ -10,7 +10,9 @@ PlaneVR is an immersive VR flight simulator developed in Unity for the Oculus Qu
 - Engage in guided training modes for learning and practicing piloting skills
 
 # Visuals
-add video**
+- Figma File Mockup: https://www.figma.com/design/jff40TwggmqGiT5MobWZ92/Virtual-Reality-Real-Estate-Site-Tour-App--VR----with-Heads-Up-Display--HUD---Community-?node-id=31-141&t=7VyIh0GKK5MReEjf-0
+- Figma Prototype Mockup: https://www.figma.com/proto/jff40TwggmqGiT5MobWZ92/Virtual-Reality-Real-Estate-Site-Tour-App--VR----with-Heads-Up-Display--HUD---Community-?node-id=31-141&t=pzlZ9ZyCsHZSKEEo-1&scaling=min-zoom&content-scaling=fixed&page-id=8%3A4284&starting-point-node-id=2008%3A593
+- Video Demo: 
 
 # Installation
 ## Requirements
