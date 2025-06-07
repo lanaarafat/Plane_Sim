@@ -9,13 +9,13 @@ PlaneVR is an immersive VR flight simulator developed in Unity for the Oculus Qu
 - Fly over selected areas in different weather conditions.
 - Engage in guided training modes for learning and practicing piloting skills
 
-Visuals
+## Visuals
 add video**
 
-Installation
-Requirements
+## Installation
+# Requirements
 - Unity 2022.3 LTS with Android Build Support
-- Oculus Intergration SDK
+- Oculus Integration SDK
 - Unity XR Interaction Toolkit
 - Eagle Light Aircraft Asset: https://assetstore.unity.com/packages/3d/vehicles/air/sky-eagle-light-aircraft-low-poly-109070
 - Oculus Quest 2
@@ -23,8 +23,8 @@ Requirements
 Project Setup Instructions
 - Clone the repository: https://github.com/lanaarafat/Plane_Sim.git
 - Open the project in Unity:
-- Install Dependencies: Oculus Intergration, GameAssets, and XR Interaction ToolKit via Package Manager
-- Configure XR settings: Go to project settings > XR Plugin Management and enable Oculus for Android.
+- Install Dependencies: Oculus Integration, GameAssets, and XR Interaction ToolKit via Package Manager
+- Configure XR settings: Go to Project Settings> XR Plugin Management and enable Oculus for Android.
 - Scene Setup: include all necessary scenes in the Build Settings
 
 Build & Deployment
