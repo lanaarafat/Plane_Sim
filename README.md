@@ -18,6 +18,8 @@ add video**
 - Oculus Integration SDK
 - Unity XR Interaction Toolkit
 - Eagle Light Aircraft Asset: https://assetstore.unity.com/packages/3d/vehicles/air/sky-eagle-light-aircraft-low-poly-109070
+- Hangar Asset: https://assetstore.unity.com/packages/3d/environments/hq-hangar-free-212795
+- Environment: https://assetstore.unity.com/packages/tools/terrain/mapmagic-2-165180
 - Oculus Quest 2
   
 ## Project Setup Instructions
