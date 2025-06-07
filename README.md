@@ -60,5 +60,5 @@ Each controller is mapped to specific interactions inside the virtual cockpit:
 The user grabs the yoke, adjusts the throttle, and activates aircraft systems by physically reaching out and interacting with in-cockpit objects. When hovering over a control, contextual tooltips appear, explaining its function. This supports beginner pilots through visual guidance.
 
 
-Developed By
+## Developed By
 Mutoni Lana Arafat
