@@ -1,75 +1,42 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
-public class YokeController : MonoBehaviour
+public class YokeRollController : MonoBehaviour
 {
-    [Header("Control Surface References")]
-    [SerializeField] public Transform elevator;       // Tail elevator
-    [SerializeField] public Transform leftAileron;    // Left wing aileron
-    [SerializeField] public Transform rightAileron;   // Right wing aileron
-
     [Header("Yoke Settings")]
-    [SerializeField] private Transform yokeBase; // The static base used to compare rotation
-    [SerializeField] private float maxPitchAngle = 15f;
-    [SerializeField] private float maxRollAngle = 20f;
-    [SerializeField] private float controlSensitivity = 1f;
+    [Tooltip("The transform of the yoke stick (grabbed by user)")]
+    public Transform yokeTransform;
 
-    private Quaternion initialYokeLocalRotation;
+    [Tooltip("The max expected Z-axis rotation (degrees) in either direction")]
+    public float maxYokeRotation = 45f;
 
-    private void Start()
+    [Header("Aircraft Settings")]
+    [Tooltip("The aircraft transform to apply roll to")]
+    public Transform aircraftTransform;
+
+    [Tooltip("How fast the aircraft rolls (degrees per second)")]
+    public float rollSpeed = 60f;
+
+    [Tooltip("How much the yoke rotation affects aircraft roll (0 to 1)")]
+    [Range(0f, 1f)]
+    public float rollSensitivity = 0.5f;
+
+    void Update()
     {
-        // Record the initial local rotation of the yoke for comparison
-        if (yokeBase == null)
-        {
-            Debug.LogError("Yoke Base is not assigned!");
-            return;
-        }
+        if (yokeTransform == null || aircraftTransform == null) return;
 
-        initialYokeLocalRotation = transform.localRotation;
-    }
+        // Get current local Z rotation of the yoke (twist left/right)
+        float zRotation = yokeTransform.localEulerAngles.z;
 
-    private void Update()
-    {
-        ApplyYokeRotation();
-    }
+        // Convert 0–360 range to -180 to 180
+        if (zRotation > 180f) zRotation -= 360f;
 
-    private void ApplyYokeRotation()
-    {
-        // Calculate local rotation difference from initial state
-        Quaternion deltaRotation = Quaternion.Inverse(initialYokeLocalRotation) * transform.localRotation;
-        Vector3 deltaEuler = deltaRotation.eulerAngles;
+        // Normalize to -1 to 1 based on maxYokeRotation
+        float rollInput = Mathf.Clamp(zRotation / maxYokeRotation, -1f, 1f);
 
-        // Normalize to -180 to 180
-        deltaEuler.x = NormalizeAngle(deltaEuler.x);
-        deltaEuler.z = NormalizeAngle(deltaEuler.z);
+        // Calculate roll angle for this frame
+        float rollAmount = rollInput * rollSpeed * rollSensitivity * Time.deltaTime;
 
-        float pitchInput = Mathf.Clamp(deltaEuler.x / maxPitchAngle, -1f, 1f) * controlSensitivity;
-        float rollInput = Mathf.Clamp(deltaEuler.z / maxRollAngle, -1f, 1f) * controlSensitivity;
-
-        // Apply to elevator (pitch)
-        if (elevator != null)
-        {
-            float elevatorDeflection = -pitchInput * maxPitchAngle; // Invert to match plane convention
-            elevator.localRotation = Quaternion.Euler(elevatorDeflection, 0f, 0f);
-        }
-
-        // Apply to ailerons (roll)
-        if (leftAileron != null)
-        {
-            float aileronDeflection = rollInput * maxRollAngle;
-            leftAileron.localRotation = Quaternion.Euler(-aileronDeflection, 0f, 0f); // Down when rolling right
-        }
-
-        if (rightAileron != null)
-        {
-            float aileronDeflection = rollInput * maxRollAngle;
-            rightAileron.localRotation = Quaternion.Euler(aileronDeflection, 0f, 0f); // Up when rolling right
-        }
-    }
-
-    private float NormalizeAngle(float angle)
-    {
-        if (angle > 180f) angle -= 360f;
-        return angle;
+        // Apply roll to the aircraft (around its forward axis)
+        aircraftTransform.Rotate(Vector3.forward, -rollAmount, Space.Self);
     }
 }
