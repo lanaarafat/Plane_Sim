@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
 
     public void FlyPlane()
     {
-        SceneManager.LoadScene("FlyingScene");
+        SceneManager.LoadScene("Flying Scene");
     }
 
     private void ShowPanel(GameObject panel)

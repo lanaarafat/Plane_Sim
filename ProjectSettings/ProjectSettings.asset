@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Plane_Sim
+  companyName: Lana
+  productName: Plane_Sim_Device
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -142,6 +142,8 @@ PlayerSettings:
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
   preloadedAssets:
+  - {fileID: 11400000, guid: 1d21b2130e23fdc4da7b61222e309dde, type: 2}
+  - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - {fileID: 829404668334368550, guid: 67d427613bc4a4844a7f404c11b2aa94, type: 2}
   - {fileID: 11400000, guid: 18c6bf4603af77d479d97fe70e14172a, type: 2}
   - {fileID: -7262863517255108093, guid: 27be630b05fe7104fa04da641efea7b9, type: 2}
@@ -165,7 +167,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.Plane_Sim
+    Android: com.Lana.Plane_Sim_Device
     Standalone: com.DefaultCompany.Plane-Sim
   buildNumber:
     Standalone: 0
@@ -853,7 +855,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: c7ba6e2a-ddd7-4e67-a7dd-49e35218271d
   framebufferDepthMemorylessMode: 0

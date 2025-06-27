@@ -36,6 +36,12 @@ PlaneVR is an immersive VR flight simulator developed in Unity for the Oculus Qu
 - Connect the headset via USB
 - Launch and begin simulation.
 
+## Video Demo
+Find link to video here()
+
+## APK FILE
+Find link to APK here (https://drive.google.com/file/d/1uCLk938fWYPJL7sonsbKu1a_obU0_63Z/view?usp=sharing)
+
 ## Testing
 - Unit Testing: Core flight control and UI functionality are tested using Unity’s built-in test framework.
 - Device Testing: Manual testing performed on Oculus Quest 2.
