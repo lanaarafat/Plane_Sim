@@ -48,6 +48,15 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("Flying Scene");
     }
 
+    public void Rain()
+    {
+        SceneManager.LoadScene("RainyScene");
+    }
+    public void Fog()
+    {
+        SceneManager.LoadScene("FogScene2");
+    }
+
     private void ShowPanel(GameObject panel)
     {
         welcomePanel.SetActive(false);
@@ -59,4 +68,7 @@ public class UIManager : MonoBehaviour
 
         panel.SetActive(true);
     }
+
+
+
 }

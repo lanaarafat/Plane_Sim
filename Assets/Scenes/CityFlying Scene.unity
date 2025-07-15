@@ -7401,6 +7401,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3824724418405882374, guid: 8a7f8031108259d4d8f823f050712090, type: 3}
   m_PrefabInstance: {fileID: 901348667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &902929831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902929833}
+  - component: {fileID: 902929832}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &902929832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902929831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35235270e8dd1404a82b33e5c81cf7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aircraftRb: {fileID: 3981370886557259213}
+  airspeedNeedle: {fileID: 1880028659950538649}
+  maxAirspeed: 160
+  airspeedMaxAngle: 270
+  attitudeHorizonObject: {fileID: 7032007751098658772}
+  attitudePitchScale: 0.05
+  horizonRotation: {fileID: 2125961920}
+  altimeterLargeNeedle: {fileID: 3574457228603021624}
+  altimeterSmallNeedle: {fileID: 4083657967665366969}
+  Sealevel: {fileID: 5956161737995072100}
+  turnCoordinatorNeedle: {fileID: 7579999101276484853}
+  maxTurnRate: 30
+  turnMaxAngle: 45
+  compassNeedle: {fileID: 6858065607619152893}
+  vsiNeedle: {fileID: 2832662640658931451}
+  maxVSI: 2000
+  vsiMaxAngle: 90
+  simpleAirPlaneController: {fileID: 3981370886557259214}
+--- !u!4 &902929833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902929831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.481327, y: 5.0903234, z: -3.8323627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &921706573
 GameObject:
   m_ObjectHideFlags: 0
@@ -17242,6 +17304,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 313632818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2125961919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125961920}
+  m_Layer: 0
+  m_Name: Attitude Horizon Rotation Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125961920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125961919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0000059453523, y: 119.90226, z: 314.91745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 847754939620043237}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2128304085
 GameObject:
@@ -35394,6 +35487,7 @@ Transform:
   - {fileID: 6377286205919547441}
   - {fileID: 2039235237788031840}
   - {fileID: 5956161737995072100}
+  - {fileID: 2125961920}
   m_Father: {fileID: 2467588819701902395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &853850769054277472
@@ -96759,3 +96853,4 @@ SceneRoots:
   - {fileID: 1452689752}
   - {fileID: 1978701857}
   - {fileID: 968837888}
+  - {fileID: 902929833}

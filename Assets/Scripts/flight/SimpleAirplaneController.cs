@@ -4,6 +4,7 @@ using Cinemachine;
 using System;
 using UnityEngine.InputSystem;
 using Unity.Mathematics;
+using UnityEngine.XR.Content.Interaction;
 
 
 [RequireComponent(typeof(Rigidbody))]
@@ -17,6 +18,8 @@ public class SimpleAirPlaneController : MonoBehaviour
     }
 
     public Action crashAction;
+
+    public bool canLand = false;
 
     #region Private variables
 
@@ -51,8 +54,7 @@ public class SimpleAirPlaneController : MonoBehaviour
     // input with new input system
     [Header("Input settings")]
     public bool VRInput = false;
-    [SerializeField] InputActionAsset xrInputActions;
-    [SerializeField] InputActionReference inputHAction;
+    [SerializeField] private XRKnob yokeKnob;
     [SerializeField] InputAction inputHActionTest;
     [SerializeField] InputAction inputVActionTest;
     [SerializeField] InputAction yawleft;
@@ -160,7 +162,7 @@ public class SimpleAirPlaneController : MonoBehaviour
 
     [Header("Takeoff settings")]
     [Tooltip("How far must the plane be from the runway before it can be controlled again")]
-    [SerializeField] private float takeoffLenght = 30f;
+    [SerializeField] private float takeoffLength = 30f;
 
 
     private void OnEnable()
@@ -290,6 +292,37 @@ public class SimpleAirPlaneController : MonoBehaviour
 
             transform.Translate(transform.up * (_angle * _mutiplierYPos) * Time.deltaTime);
             transform.Rotate(Vector3.right * (-_angle * _mutiplierXRot) * currentPitchSpeed * Time.deltaTime);
+        }
+    }
+
+    private void MovementTakeOff()
+    {
+        //Rotate yaw
+        if (inputYawRight)
+        {
+            transform.Rotate(Vector3.up * currentYawSpeed * Time.deltaTime);
+        }
+        else if (inputYawLeft)
+        {
+            transform.Rotate(-Vector3.up * currentYawSpeed * Time.deltaTime);
+        }
+
+        if(inputTurbo && !turboOverheat)
+        {
+            if (turboHeat > 100f)
+            {
+                turboHeat = 100f;
+                turboOverheat = true;
+            }
+            else
+            {
+                //Add turbo heat
+                turboHeat += Time.deltaTime * turboHeatingSpeed;
+            }
+
+            //Set speed to turbo speed and rotation to turbo values
+
+            currentYawSpeed = yawSpeed * yawTurboMultiplier;
         }
     }
 
@@ -425,6 +458,8 @@ public class SimpleAirPlaneController : MonoBehaviour
     private void TakeoffUpdate()
     {
         UpdatePropellersAndLights();
+
+        MovementTakeOff();
 
         //Reset colliders
         foreach (SimpleAirPlaneCollider _airPlaneCollider in airPlaneColliders)
@@ -732,7 +767,14 @@ public class SimpleAirPlaneController : MonoBehaviour
             inputTurbo = inputTurboLeft.IsPressed() ? true : false;
             inputTurbo = inputTurboRight.IsPressed() ? true : false;
 
-
+            //if (yokeKnob.value > 0.6f)
+            //{
+            //    inputH = 1;
+            //}
+            //else if (yokeKnob.value < 0.3f)
+            //{
+            //    inputH = -1;
+            //}
 
         }
         else
@@ -748,6 +790,21 @@ public class SimpleAirPlaneController : MonoBehaviour
             inputTurbo = Input.GetKey(KeyCode.LeftShift);
 
         }
+    }
+
+    public void SetAcceleration(float amount)
+    {
+       accelerating = amount;
+    }
+
+    public void UpdateSpeed(float amount)
+    {
+        defaultSpeed += amount;
+    }
+
+    public void SetSpeed(float amount)
+    {
+        defaultSpeed = amount;
     }
 
     #endregion

@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Flying Scene.unity
     guid: c51be25f2506e0447a8174b321f1429f
+  - enabled: 0
+    path: Assets/Scenes/FogScene.unity
+    guid: cf1b3ca9db55d05459b1c082725ef3c8
+  - enabled: 0
+    path: Assets/Scenes/RainScene.unity
+    guid: 93b81ae1778cf4743bc65450e4d744d4
+  - enabled: 1
+    path: Assets/Scenes/RainyScene.unity
+    guid: 091a5b440f3288341b94e831157bb006
+  - enabled: 1
+    path: Assets/Scenes/FogScene2.unity
+    guid: d4150ebbac466af41931bff3342896de
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 18c6bf4603af77d479d97fe70e14172a, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1d21b2130e23fdc4da7b61222e309dde, type: 2}

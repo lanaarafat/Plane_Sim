@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Content.Interaction;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -70,11 +71,16 @@ public class FlyManager : MonoBehaviour
     [SerializeField] private float keyTurnValueOn = 0.8f;
     [SerializeField] private float keyTurnValueOff = 0.2f;
 
+
+
     [Space(10)]
     [Header("Take Off ")]
     [SerializeField] private AudioClip takeOffAudioClip;
     [SerializeField] private SimpleAirPlaneController simpleAirPlaneController;
-   
+    [SerializeField] private GameObject propellerObj;
+    [SerializeField] private bool isPropellerSpinning = false; 
+
+
 
 
     // take off plans and flying from here to complete the process.
@@ -110,7 +116,7 @@ public class FlyManager : MonoBehaviour
         StartCoroutine(PlayAudio(throttlePushAudioClip));
 
         //throttlePushInteractable.selectEntered.AddListener(CheckThrottlePush);
-        throttlePushInteractable.selectExited.AddListener(CheckThrottlePush);
+        throttlePushInteractable.lastSelectExited.AddListener(CheckThrottlePush);
 
         engineStartInteractable.enabled = false;
         engineStartInteractable.selectEntered.RemoveListener(ThrottlePush);
@@ -133,23 +139,44 @@ public class FlyManager : MonoBehaviour
 
         StartCoroutine(PlayAudio(mixturePullLeanAudioClip));
 
-        mixturePullLeanInteractable.selectExited.AddListener(CheckMixturePull);
+        mixturePullLeanInteractable.lastSelectExited.AddListener(CheckMixturePull);
 
 
 
 
-        throttlePushInteractable.enabled = false;
-        throttlePushInteractable.selectExited.RemoveListener(MixturePull);
+       // throttlePushInteractable.enabled = false;
+      //  throttlePushInteractable.selectExited.RemoveListener(MixturePull);
 
        
     }
+
+    private bool isFirst = false;
 
     private void CheckMixturePull(SelectExitEventArgs args)
     {
         if (mixturePullLeanInteractable.value <= mixturePullLeanValue)
         {
             mixturePullLeanInteractable.selectExited.AddListener(FuelSelectorValve);
+
+            // increase speed by certain amount here.
+            if (isFirst)
+            {
+                simpleAirPlaneController.UpdateSpeed(20f);
+            }
+            isFirst = true;
+           
         }
+        else
+        {
+            // decrease by old amount
+            if (isFirst)
+            {
+                simpleAirPlaneController.UpdateSpeed(-20f);
+            }
+  
+        }
+
+
     }
 
 
@@ -161,7 +188,7 @@ public class FlyManager : MonoBehaviour
 
         StartCoroutine(PlayAudio(fuelSelectorValveAudioClip));
 
-        fuelSelectorValveInteractable.selectExited.AddListener(CheckFuelSelectorValve);
+        fuelSelectorValveInteractable.lastSelectExited.AddListener(CheckFuelSelectorValve);
 
 
 
@@ -186,7 +213,7 @@ public class FlyManager : MonoBehaviour
 
         StartCoroutine(PlayAudio(wingFlapAudioClip));
 
-        wingFlapInteractable.selectExited.AddListener(CheckWingFlap);
+        wingFlapInteractable.lastSelectExited.AddListener(CheckWingFlap);
 
 
         fuelSelectorValveInteractable.enabled = false;
@@ -209,7 +236,7 @@ public class FlyManager : MonoBehaviour
 
         StartCoroutine(PlayAudio(keyTurnAudioClip)); 
 
-        keyTurnInteractable.selectExited.AddListener(CheckKeyTurn);
+        keyTurnInteractable.lastSelectExited.AddListener(CheckKeyTurn);
 
 
         wingFlapInteractable.enabled = false;
@@ -234,16 +261,24 @@ public class FlyManager : MonoBehaviour
         }
     }
 
+    // fixed instant acceleration for take off.
 
      IEnumerator PlaneTakeOffActiviated()
      {
         keyTurnOutline.enabled = false;
-        simpleAirPlaneController.enabled = true;
 
+        // make prepeler spin here.
+        // play propler engine sound here.
+        isPropellerSpinning = true;
+        audioSource.clip = takeOffAudioClip;
+        audioSource.Play();
        
 
         yield return new WaitForSeconds(timeBeforeTakeOff);
-        StartCoroutine(PlayAudio(takeOffAudioClip));
+        isPropellerSpinning = false;
+
+        audioSource.Stop();
+        simpleAirPlaneController.enabled = true;
         simpleAirPlaneController.airplaneState = SimpleAirPlaneController.AirplaneState.Takeoff;
 
         keyTurnInteractable.enabled = false;
@@ -268,14 +303,27 @@ public class FlyManager : MonoBehaviour
         {
             if (audioSource != null)
             {
-                audioSource.PlayOneShot(clip);
+                audioSource.Stop();
+                audioSource.clip = clip;
+                audioSource.Play();
             }
         }
     }
 
     private void Update()
     {
-        
+        // gonna rotate propeller here.
+        if(isPropellerSpinning)
+        {
+            propellerObj.transform.Rotate(Vector3.forward * 500 * Time.deltaTime);
+        }
+
+    }
+
+
+    public void LoadMenuScene()
+    {
+        SceneManager.LoadScene("WorkingScene");
     }
 
 }

@@ -8,7 +8,12 @@ using static SimpleAirPlaneController;
     {
         [SerializeField] private Runway runway;
 
-        private void OnTriggerEnter(Collider other)
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
         {
             //Check if colliding object has airplane collider component
             if (other.transform.TryGetComponent<SimpleAirPlaneCollider>(out SimpleAirPlaneCollider _airPlaneCollider))
